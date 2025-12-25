@@ -2,8 +2,7 @@ using UnityEngine;
 
 public class Country : MonoBehaviour
 {
-    public string countryName;
-    public int countryPopulation;
+    public CountrySO countryData;
     public SpriteRenderer spriteRenderer;
 
     private Color defaultColor;

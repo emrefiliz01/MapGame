@@ -8,6 +8,7 @@ public class UIManager : MonoBehaviour
     public static UIManager Instance;
 
     [SerializeField] private GameObject infoPanel;
+    [SerializeField] private GameObject gameOverPanel;
     [SerializeField] private TMP_Text countryNameText;
     [SerializeField] private TMP_Text countryPopulationText;
 
@@ -29,8 +30,19 @@ public class UIManager : MonoBehaviour
         selectedCountry.SetColor(Color.white);
 
         infoPanel.SetActive(true);
-        countryNameText.text = country.countryName;
-        countryPopulationText.text = "Population: " + country.countryPopulation.ToString();
+        if (country.countryData != null)
+        {
+            countryNameText.text = country.countryData.countryName;
+            countryPopulationText.text = "Army Population: " + country.countryData.countryArmyPopulation.ToString();
+        }
+    }
+
+    public void ActivateGameOverPanel()
+    {
+        if (gameOverPanel != null)
+        {
+            gameOverPanel.SetActive(true);
+        }
     }
 
     public void ClosePanel()
