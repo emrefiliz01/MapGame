@@ -14,3 +14,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: 8
   countryArmyPopulation: 800
+  countryFood: 800

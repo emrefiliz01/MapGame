@@ -5,4 +5,5 @@ public class CountrySO : ScriptableObject
 {
     public string countryName;
     public int countryArmyPopulation;
+    public int countryFood;
 }
