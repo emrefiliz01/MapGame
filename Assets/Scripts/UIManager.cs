@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using DG.Tweening;
 
 public class UIManager : MonoBehaviour
 {
@@ -19,10 +20,15 @@ public class UIManager : MonoBehaviour
     [SerializeField] private TMP_Text ourCountryFoodText;
 
     private Country selectedCountry;
+    private RectTransform infoPanelRect;
 
     private void Awake()
     {
         Instance = this;
+        if (infoPanel != null)
+        {
+            infoPanelRect = infoPanel.GetComponent<RectTransform>();
+        }
     }
 
     public void UpdatePlayerCountryUI(Country country)
@@ -42,7 +48,21 @@ public class UIManager : MonoBehaviour
         selectedCountry = country;
         selectedCountry.SetColor(Color.white);
 
-        infoPanel.SetActive(true);
+        if (infoPanelRect != null)
+        {
+            if (!infoPanel.activeSelf)
+            {
+                infoPanelRect.DOKill();
+                infoPanelRect.localScale = Vector3.zero;
+                infoPanel.SetActive(true);
+                infoPanelRect.DOScale(Vector3.one, 0.3f).SetEase(Ease.OutBack);
+            }
+        }
+        else
+        {
+             infoPanel.SetActive(true);
+        }
+
         if (country.countryData != null)
         {
             countryNameText.text = country.countryData.countryName;

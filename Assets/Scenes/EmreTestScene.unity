@@ -1392,6 +1392,9 @@ MonoBehaviour:
   countryNameText: {fileID: 1799079547}
   countryPopulationText: {fileID: 473207416}
   countryFoodText: {fileID: 1105428209}
+  ourCountryInfoPanel: {fileID: 928176468}
+  ourCountryArmyText: {fileID: 843504098}
+  ourCountryFoodText: {fileID: 1662655513}
 --- !u!4 &700959824
 Transform:
   m_ObjectHideFlags: 0
@@ -1912,7 +1915,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 00b63e7544afa6941b6ab57e85255ea3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  durationMinutes: 0.1
+  durationMinutes: 0.2
   timerText: {fileID: 997962948}
 --- !u!1 &1105428207
 GameObject:
@@ -2622,10 +2625,10 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1146562962}
   - {fileID: 997962947}
-  - {fileID: 1167276390}
+  - {fileID: 1146562962}
   - {fileID: 928176469}
+  - {fileID: 1167276390}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
