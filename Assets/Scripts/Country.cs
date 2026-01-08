@@ -11,9 +11,7 @@ public class Country : MonoBehaviour
     void Start()
     {
          spriteRenderer = GetComponent<SpriteRenderer>();
-         if (!isPlayerCountry) // Only set default if it hasn't been overridden by SetAsPlayerCountry potentially running before Start? 
-                               // Actually Start runs after Awake. SetAsPlayerCountry is called in GameManager Start.
-                               // Best to just set defaultColor here, and if SetAsPlayerCountry is called later, it overwrites it.
+         if (!isPlayerCountry)                 
          {
             defaultColor = spriteRenderer.color;
          }
@@ -32,8 +30,8 @@ public class Country : MonoBehaviour
     public void SetAsPlayerCountry()
     {
         isPlayerCountry = true;
-        defaultColor = Color.green; // Update default color so ResetColor works correctly
-        spriteRenderer = GetComponent<SpriteRenderer>(); // Ensure component is retrieved if this is called early
+        defaultColor = Color.green;
+        spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = Color.green;
     }
 
@@ -41,6 +39,6 @@ public class Country : MonoBehaviour
     {
         if (isPlayerCountry) return;
 
-        UIManager.Instance.ShowCountryInfo(this);
+        GameManager.Instance.SelectCountry(this);
     }
 }

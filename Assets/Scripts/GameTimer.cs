@@ -27,7 +27,7 @@ public class GameTimer : MonoBehaviour
                 {
                     timeRemaining = 0;
                     isRunning = false;
-                    UIManager.Instance.ActivateGameOverPanel();
+                    UIManager.Instance.ShowGameOverPanel();
                 }
                 UpdateTimerUI();
             }
@@ -35,7 +35,7 @@ public class GameTimer : MonoBehaviour
             {
                 timeRemaining = 0;
                 isRunning = false;
-                UIManager.Instance.ActivateGameOverPanel();
+                UIManager.Instance.ShowGameOverPanel();
                 UpdateTimerUI();
             }
         }

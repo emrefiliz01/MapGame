@@ -10,17 +10,9 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] private TMP_Text countryNameText;
-    [SerializeField] private TMP_Text countryPopulationText;
-    [SerializeField] private TMP_Text countryFoodText;
-
-    [Header("Our Country Info")]
+    [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject ourCountryInfoPanel;
-    [SerializeField] private TMP_Text ourCountryArmyText;
-    [SerializeField] private TMP_Text ourCountryFoodText;
-    [SerializeField] private TMP_Text ourCountryGoldText;
 
-    private Country selectedCountry;
     private RectTransform infoPanelRect;
 
     private void Awake()
@@ -32,24 +24,8 @@ public class UIManager : MonoBehaviour
         }
     }
 
-    public void UpdatePlayerCountryUI(Country country)
+    public void ShowInfoPanel()
     {
-        ourCountryInfoPanel.SetActive(true);
-        ourCountryArmyText.text = "Army: " + country.countryData.countryArmyPopulation;
-        ourCountryFoodText.text = "Food: " + country.countryData.countryFood;
-        ourCountryGoldText.text = "Gold: " + country.countryData.countryGold;
-    }
-
-    public void ShowCountryInfo(Country country)
-    {
-        if (selectedCountry != null)
-        {
-            selectedCountry.ResetColor();
-        }
-
-        selectedCountry = country;
-        selectedCountry.SetColor(Color.white);
-
         if (infoPanelRect != null)
         {
             if (!infoPanel.activeSelf)
@@ -62,18 +38,32 @@ public class UIManager : MonoBehaviour
         }
         else
         {
-             infoPanel.SetActive(true);
-        }
-
-        if (country.countryData != null)
-        {
-            countryNameText.text = country.countryData.countryName;
-            countryPopulationText.text = country.countryData.countryArmyPopulation.ToString();
-            countryFoodText.text = country.countryData.countryFood.ToString();
+            infoPanel.SetActive(true);
         }
     }
 
-    public void ActivateGameOverPanel()
+    public void HideInfoPanel()
+    {
+        if (infoPanelRect != null)
+        {
+            infoPanelRect.DOKill();
+            infoPanelRect.DOScale(Vector3.zero, 0.3f).SetEase(Ease.InBack).OnComplete(() =>
+            {
+                infoPanel.SetActive(false);
+            });
+        }
+        else
+        {
+            infoPanel.SetActive(false);
+        }
+    }
+
+    public void ShowPlayerStatsPanel()
+    {
+        ourCountryInfoPanel.SetActive(true);
+    }
+
+    public void ShowGameOverPanel()
     {
         if (gameOverPanel != null)
         {
@@ -81,13 +71,16 @@ public class UIManager : MonoBehaviour
         }
     }
 
+    public void ShowVictoryPanel()
+    {
+        if (victoryPanel != null)
+        {
+            victoryPanel.SetActive(true);
+        }
+    }
+
     public void ClosePanel()
     {
-        if (selectedCountry != null)
-        {
-            selectedCountry.ResetColor();
-            selectedCountry = null;
-        }
-        infoPanel.SetActive(false);
+        GameManager.Instance.DeselectCountry();
     }
 }
