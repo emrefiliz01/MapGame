@@ -18,6 +18,7 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject ourCountryInfoPanel;
     [SerializeField] private TMP_Text ourCountryArmyText;
     [SerializeField] private TMP_Text ourCountryFoodText;
+    [SerializeField] private TMP_Text ourCountryGoldText;
 
     private Country selectedCountry;
     private RectTransform infoPanelRect;
@@ -36,6 +37,7 @@ public class UIManager : MonoBehaviour
         ourCountryInfoPanel.SetActive(true);
         ourCountryArmyText.text = "Army: " + country.countryData.countryArmyPopulation;
         ourCountryFoodText.text = "Food: " + country.countryData.countryFood;
+        ourCountryGoldText.text = "Gold: " + country.countryData.countryGold;
     }
 
     public void ShowCountryInfo(Country country)

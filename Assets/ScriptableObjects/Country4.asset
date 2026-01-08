@@ -15,3 +15,4 @@ MonoBehaviour:
   countryName: 4
   countryArmyPopulation: 400
   countryFood: 400
+  countryGold: 400
