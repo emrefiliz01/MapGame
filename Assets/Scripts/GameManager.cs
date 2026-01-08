@@ -14,10 +14,6 @@ public class GameManager : MonoBehaviour
         {
             Instance = this;
         }
-        else
-        {
-            Destroy(gameObject);
-        }
     }
 
     private void Start()
@@ -80,7 +76,6 @@ public class GameManager : MonoBehaviour
     {
         if (selectedCountry == null || playerCountry == null)
         {
-            Debug.LogWarning("Cannot attack: no country selected or no player country");
             return;
         }
 
