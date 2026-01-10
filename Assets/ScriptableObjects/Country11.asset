@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bfa4cc3dca594409b736a7fa4d4d61, type: 3}
   m_Name: Country11
   m_EditorClassIdentifier: 
-  countryName: 11
+  countryName: Ashkara
   countryArmyPopulation: 1100
   countryFood: 1100
   countryGold: 1100

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bfa4cc3dca594409b736a7fa4d4d61, type: 3}
   m_Name: Country1
   m_EditorClassIdentifier: 
-  countryName: 1
+  countryName: Aetherion
   countryArmyPopulation: 100
   countryFood: 100
   countryGold: 100

@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 10bfa4cc3dca594409b736a7fa4d4d61, type: 3}
   m_Name: Country7
   m_EditorClassIdentifier: 
-  countryName: 7
+  countryName: Lumaria
   countryArmyPopulation: 700
   countryFood: 700
   countryGold: 700
