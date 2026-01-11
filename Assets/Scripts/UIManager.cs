@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
 
@@ -13,6 +14,10 @@ public class UIManager : MonoBehaviour
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject ourCountryInfoPanel;
 
+    [Header("Victory Panel Buttons")]
+    public Button foodButton;
+    public Button goldButton;
+
     private RectTransform infoPanelRect;
 
     private void Awake()
@@ -22,6 +27,31 @@ public class UIManager : MonoBehaviour
         {
             infoPanelRect = infoPanel.GetComponent<RectTransform>();
         }
+    }
+
+    private void Start()
+    {
+        if (foodButton != null)
+        {
+            foodButton.onClick.AddListener(OnFoodButtonClicked);
+        }
+
+        if (goldButton != null)
+        {
+            goldButton.onClick.AddListener(OnGoldButtonClicked);
+        }
+    }
+
+    private void OnFoodButtonClicked()
+    {
+        GameManager.Instance.LootFood();
+        victoryPanel.SetActive(false);
+    }
+
+    private void OnGoldButtonClicked()
+    {
+        GameManager.Instance.LootGold();
+        victoryPanel.SetActive(false);
     }
 
     public void ShowInfoPanel()

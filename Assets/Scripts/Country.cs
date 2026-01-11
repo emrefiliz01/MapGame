@@ -6,7 +6,9 @@ public class Country : MonoBehaviour
     public SpriteRenderer spriteRenderer;
 
     private Color defaultColor;
+    private Color hoverColor;
     private bool isPlayerCountry = false;
+    private bool isHovering = false;
 
     void Start()
     {
@@ -14,6 +16,8 @@ public class Country : MonoBehaviour
          if (!isPlayerCountry)                 
          {
             defaultColor = spriteRenderer.color;
+            hoverColor = defaultColor * 1.3f;
+            hoverColor.a = defaultColor.a;
          }
     }
 
@@ -33,6 +37,22 @@ public class Country : MonoBehaviour
         defaultColor = Color.green;
         spriteRenderer = GetComponent<SpriteRenderer>();
         spriteRenderer.color = Color.green;
+    }
+
+    private void OnMouseEnter()
+    {
+        if (isPlayerCountry) return;
+
+        isHovering = true;
+        spriteRenderer.color = hoverColor;
+    }
+
+    private void OnMouseExit()
+    {
+        if (isPlayerCountry) return;
+
+        isHovering = false;
+        spriteRenderer.color = defaultColor;
     }
 
     private void OnMouseDown()

@@ -93,4 +93,38 @@ public class GameManager : MonoBehaviour
             UIManager.Instance.ShowGameOverPanel();
         }
     }
+
+    [Header("Loot Settings")]
+    [SerializeField] private int foodLootAmount = 50;
+    [SerializeField] private int goldLootAmount = 50;
+
+    public void LootFood()
+    {
+        if (selectedCountry != null && playerCountry != null)
+        {
+            playerCountry.countryData.countryFood += foodLootAmount;
+            selectedCountry.countryData.countryFood -= foodLootAmount;
+            
+            if (PlayerStatsDisplay.Instance != null)
+            {
+                PlayerStatsDisplay.Instance.UpdateDisplay(playerCountry);
+            }
+        }
+        DeselectCountry();
+    }
+
+    public void LootGold()
+    {
+        if (selectedCountry != null && playerCountry != null)
+        {
+            playerCountry.countryData.countryGold += goldLootAmount;
+            selectedCountry.countryData.countryGold -= goldLootAmount;
+
+            if (PlayerStatsDisplay.Instance != null)
+            {
+                PlayerStatsDisplay.Instance.UpdateDisplay(playerCountry);
+            }
+        }
+        DeselectCountry();
+    }
 }
