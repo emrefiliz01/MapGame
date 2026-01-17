@@ -7,6 +7,7 @@ public class GameManager : MonoBehaviour
 
     private Country selectedCountry;
     private Country playerCountry;
+    private Country defeatedCountry;
 
     private void Awake()
     {
@@ -101,7 +102,6 @@ public class GameManager : MonoBehaviour
                 PlayerStatsDisplay.Instance.UpdateDisplay(playerCountry);
             }
         }
-        DeselectCountry();
     }
 
     public void LootGold()
@@ -116,6 +116,19 @@ public class GameManager : MonoBehaviour
                 PlayerStatsDisplay.Instance.UpdateDisplay(playerCountry);
             }
         }
-        DeselectCountry();
+    }
+
+    public void SetDefeatedCountry()
+    {
+        defeatedCountry = selectedCountry;
+    }
+
+    public void ConquerDefeatedCountry()
+    {
+        if (defeatedCountry != null)
+        {
+            defeatedCountry.SetAsConqueredCountry();
+            defeatedCountry = null;
+        }
     }
 }

@@ -39,6 +39,17 @@ public class Country : MonoBehaviour
         spriteRenderer.color = Color.green;
     }
 
+    public void SetAsConqueredCountry()
+    {
+        isPlayerCountry = true;
+        defaultColor = Color.green;
+        if (spriteRenderer == null)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+        spriteRenderer.color = Color.green;
+    }
+
     private void OnMouseEnter()
     {
         if (isPlayerCountry) return;
