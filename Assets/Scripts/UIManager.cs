@@ -11,6 +11,7 @@ public class UIManager : MonoBehaviour
 
     [SerializeField] private GameObject infoPanel;
     [SerializeField] private GameObject gameOverPanel;
+    [SerializeField] private GameObject gameWonPanel;
     [SerializeField] private GameObject victoryPanel;
     [SerializeField] private GameObject ourCountryInfoPanel;
 
@@ -129,6 +130,15 @@ public class UIManager : MonoBehaviour
         if (victoryPanel != null)
         {
             victoryPanel.SetActive(true);
+        }
+    }
+
+    public void ShowGameWonPanel()
+    {
+        isInfoPanelOpened = true;
+        if (gameWonPanel != null)
+        {
+            gameWonPanel.SetActive(true);
         }
     }
 

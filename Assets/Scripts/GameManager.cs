@@ -129,6 +129,31 @@ public class GameManager : MonoBehaviour
         {
             defeatedCountry.SetAsConqueredCountry();
             defeatedCountry = null;
+
+            CheckWinCondition();
+        }
+    }
+
+    private void CheckWinCondition()
+    {
+        Country[] allCountries = FindObjectsOfType<Country>();
+        bool allConquered = true;
+
+        foreach (Country country in allCountries)
+        {
+            if (!country.isPlayerCountry)
+            {
+                allConquered = false;
+                break;
+            }
+        }
+
+        if (allConquered)
+        {
+            if (UIManager.Instance != null)
+            {
+                UIManager.Instance.ShowGameWonPanel();
+            }
         }
     }
 }

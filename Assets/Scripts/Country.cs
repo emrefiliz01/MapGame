@@ -13,7 +13,7 @@ public class Country : MonoBehaviour
 
     private Color defaultColor;
     private Color hoverColor;
-    private bool isPlayerCountry = false;
+    public bool isPlayerCountry = false;
     private bool isHovering = false;
 
     void Start()

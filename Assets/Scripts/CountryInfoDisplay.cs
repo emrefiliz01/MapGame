@@ -21,10 +21,6 @@ public class CountryInfoDisplay : MonoBehaviour
         countryNameText.text = country.countryName;
         countryPopulationText.text = country.countryArmyPopulation.ToString();
         countryFoodText.text = country.countryFood.ToString();
-        
-        if (countryFlagImage != null && country.countryFlag != null)
-        {
-            countryFlagImage.sprite = country.countryFlag;
-        }
+        countryFlagImage.sprite = country.countryFlag;
     }
 }
