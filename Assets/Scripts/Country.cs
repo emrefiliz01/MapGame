@@ -58,6 +58,7 @@ public class Country : MonoBehaviour
     private void OnMouseDown()
     {
         if (isPlayerCountry) return;
+        if (UIManager.Instance.isInfoPanelOpened) return;
 
         GameManager.Instance.SelectCountry(this);
     }

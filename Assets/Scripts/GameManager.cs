@@ -72,26 +72,17 @@ public class GameManager : MonoBehaviour
         UIManager.Instance.HideInfoPanel();
     }
 
-    public void AttackCountry()
+    public bool AttackCountry()
     {
         if (selectedCountry == null || playerCountry == null)
         {
-            return;
+            return false;
         }
 
         int playerArmy = playerCountry.countryData.countryArmyPopulation;
         int enemyArmy = selectedCountry.countryData.countryArmyPopulation;
 
-        UIManager.Instance.HideInfoPanel();
-
-        if (playerArmy > enemyArmy)
-        {
-            UIManager.Instance.ShowVictoryPanel();
-        }
-        else
-        {
-            UIManager.Instance.ShowGameOverPanel();
-        }
+        return playerArmy > enemyArmy;
     }
 
     [Header("Loot Settings")]
