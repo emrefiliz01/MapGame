@@ -86,6 +86,7 @@ public class Country : MonoBehaviour
     {
         if (isPlayerCountry) return;
         if (UIManager.Instance.isInfoPanelOpened) return;
+        if (UnityEngine.EventSystems.EventSystem.current.IsPointerOverGameObject()) return;
 
         GameManager.Instance.SelectCountry(this);
     }

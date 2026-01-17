@@ -55,6 +55,7 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.LootFood();
         GameManager.Instance.ConquerDefeatedCountry();
+        isInfoPanelOpened = false;
         victoryPanel.SetActive(false);
     }
 
@@ -62,12 +63,14 @@ public class UIManager : MonoBehaviour
     {
         GameManager.Instance.LootGold();
         GameManager.Instance.ConquerDefeatedCountry();
+        isInfoPanelOpened = false;
         victoryPanel.SetActive(false);
     }
 
     public void ShowInfoPanel()
     {
         isInfoPanelOpened = true;
+        isBattleInProgress = false;
         
         if (attackTab != null) attackTab.SetActive(true);
         if (battleTab != null) battleTab.SetActive(false);
@@ -164,7 +167,6 @@ public class UIManager : MonoBehaviour
         bool playerWon = GameManager.Instance.AttackCountry();
         isBattleInProgress = false;
         
-        // Store the defeated country before UI interactions
         if (playerWon)
         {
             GameManager.Instance.SetDefeatedCountry();
