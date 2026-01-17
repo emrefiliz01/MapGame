@@ -3431,7 +3431,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 1309a752b19cd8747b6da675a5c56070, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 273dd01f69179a4409f58c2c6b1c97a7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -4385,7 +4385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &641679484
 Transform:
   m_ObjectHideFlags: 0
@@ -7733,7 +7733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1048620639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8529,7 +8529,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1146562962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8843,6 +8843,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 715f1e8306ea0c74bbd312339b18fb92, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  inBattleStatus:
+  - 
+  - 
+  - 
   foodLootAmount: 50
   goldLootAmount: 50
 --- !u!4 &1220759030
@@ -8992,7 +8996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 7482667652216324306, guid: 1309a752b19cd8747b6da675a5c56070, type: 3}
+  m_Sprite: {fileID: 7482667652216324306, guid: 273dd01f69179a4409f58c2c6b1c97a7, type: 3}
   m_Type: 3
   m_PreserveAspect: 0
   m_FillCenter: 1
