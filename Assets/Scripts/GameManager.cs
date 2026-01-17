@@ -80,8 +80,8 @@ public class GameManager : MonoBehaviour
             return false;
         }
 
-        int playerArmy = playerCountry.countryData.countryArmyPopulation;
-        int enemyArmy = selectedCountry.countryData.countryArmyPopulation;
+        int playerArmy = playerCountry.countryArmyPopulation;
+        int enemyArmy = selectedCountry.countryArmyPopulation;
 
         return playerArmy > enemyArmy;
     }
@@ -94,8 +94,8 @@ public class GameManager : MonoBehaviour
     {
         if (selectedCountry != null && playerCountry != null)
         {
-            playerCountry.countryData.countryFood += foodLootAmount;
-            selectedCountry.countryData.countryFood -= foodLootAmount;
+            playerCountry.countryFood += foodLootAmount;
+            selectedCountry.countryFood -= foodLootAmount;
             
             if (PlayerStatsDisplay.Instance != null)
             {
@@ -108,8 +108,8 @@ public class GameManager : MonoBehaviour
     {
         if (selectedCountry != null && playerCountry != null)
         {
-            playerCountry.countryData.countryGold += goldLootAmount;
-            selectedCountry.countryData.countryGold -= goldLootAmount;
+            playerCountry.countryGold += goldLootAmount;
+            selectedCountry.countryGold -= goldLootAmount;
 
             if (PlayerStatsDisplay.Instance != null)
             {

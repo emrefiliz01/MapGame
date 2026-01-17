@@ -17,9 +17,9 @@ public class PlayerStatsDisplay : MonoBehaviour
 
     public void UpdateDisplay(Country country)
     {
-        ourCountryNameText.text = country.countryData.countryName;
-        ourCountryArmyText.text = "Army: " + country.countryData.countryArmyPopulation;
-        ourCountryFoodText.text = "Food: " + country.countryData.countryFood;
-        ourCountryGoldText.text = "Gold: " + country.countryData.countryGold;
+        ourCountryNameText.text = country.countryName;
+        ourCountryArmyText.text = "Army: " + country.countryArmyPopulation;
+        ourCountryFoodText.text = "Food: " + country.countryFood;
+        ourCountryGoldText.text = "Gold: " + country.countryGold;
     }
 }

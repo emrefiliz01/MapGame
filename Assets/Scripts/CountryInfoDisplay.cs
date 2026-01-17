@@ -16,8 +16,8 @@ public class CountryInfoDisplay : MonoBehaviour
 
     public void UpdateDisplay(Country country)
     {
-        countryNameText.text = country.countryData.countryName;
-        countryPopulationText.text = country.countryData.countryArmyPopulation.ToString();
-        countryFoodText.text = country.countryData.countryFood.ToString();
+        countryNameText.text = country.countryName;
+        countryPopulationText.text = country.countryArmyPopulation.ToString();
+        countryFoodText.text = country.countryFood.ToString();
     }
 }

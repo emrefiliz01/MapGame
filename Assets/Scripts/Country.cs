@@ -5,6 +5,12 @@ public class Country : MonoBehaviour
     public CountrySO countryData;
     public SpriteRenderer spriteRenderer;
 
+    // Runtime data (copies of SO data that we can modify without affecting the asset)
+    public string countryName;
+    public int countryArmyPopulation;
+    public int countryFood;
+    public int countryGold;
+
     private Color defaultColor;
     private Color hoverColor;
     private bool isPlayerCountry = false;
@@ -13,6 +19,16 @@ public class Country : MonoBehaviour
     void Start()
     {
          spriteRenderer = GetComponent<SpriteRenderer>();
+         
+         // Copy data from ScriptableObject to runtime variables
+         if (countryData != null)
+         {
+             countryName = countryData.countryName;
+             countryArmyPopulation = countryData.countryArmyPopulation;
+             countryFood = countryData.countryFood;
+             countryGold = countryData.countryGold;
+         }
+         
          if (!isPlayerCountry)                 
          {
             defaultColor = spriteRenderer.color;
