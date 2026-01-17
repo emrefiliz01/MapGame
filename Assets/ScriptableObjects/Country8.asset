@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Country8
   m_EditorClassIdentifier: 
   countryName: Ironfall
+  countryFlag: {fileID: 21300000, guid: 6f1e15a2bc0164d4eb131accadb42ab7, type: 3}
   countryArmyPopulation: 800
   countryFood: 800
   countryGold: 800

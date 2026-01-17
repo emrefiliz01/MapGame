@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Country10
   m_EditorClassIdentifier: 
   countryName: Ravenhold
+  countryFlag: {fileID: 21300000, guid: 969cfe591c722c5438373a7d61000c90, type: 3}
   countryArmyPopulation: 1000
   countryFood: 1000
   countryGold: 1000

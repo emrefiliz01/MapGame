@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Country4
   m_EditorClassIdentifier: 
   countryName: Solaryn
+  countryFlag: {fileID: 21300000, guid: 2950553b1d3869041b2c067a2fce6f34, type: 3}
   countryArmyPopulation: 400
   countryFood: 400
   countryGold: 400

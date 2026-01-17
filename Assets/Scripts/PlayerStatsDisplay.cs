@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class PlayerStatsDisplay : MonoBehaviour
@@ -9,6 +10,7 @@ public class PlayerStatsDisplay : MonoBehaviour
     [SerializeField] private TMP_Text ourCountryArmyText;
     [SerializeField] private TMP_Text ourCountryFoodText;
     [SerializeField] private TMP_Text ourCountryGoldText;
+    [SerializeField] private Image ourCountryFlagImage;
 
     private void Awake()
     {
@@ -21,5 +23,10 @@ public class PlayerStatsDisplay : MonoBehaviour
         ourCountryArmyText.text = "Army: " + country.countryArmyPopulation;
         ourCountryFoodText.text = "Food: " + country.countryFood;
         ourCountryGoldText.text = "Gold: " + country.countryGold;
+        
+        if (ourCountryFlagImage != null && country.countryFlag != null)
+        {
+            ourCountryFlagImage.sprite = country.countryFlag;
+        }
     }
 }

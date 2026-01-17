@@ -5,8 +5,8 @@ public class Country : MonoBehaviour
     public CountrySO countryData;
     public SpriteRenderer spriteRenderer;
 
-    // Runtime data (copies of SO data that we can modify without affecting the asset)
     public string countryName;
+    public Sprite countryFlag;
     public int countryArmyPopulation;
     public int countryFood;
     public int countryGold;
@@ -20,10 +20,10 @@ public class Country : MonoBehaviour
     {
          spriteRenderer = GetComponent<SpriteRenderer>();
          
-         // Copy data from ScriptableObject to runtime variables
          if (countryData != null)
          {
              countryName = countryData.countryName;
+             countryFlag = countryData.countryFlag;
              countryArmyPopulation = countryData.countryArmyPopulation;
              countryFood = countryData.countryFood;
              countryGold = countryData.countryGold;

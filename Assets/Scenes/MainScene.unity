@@ -1468,6 +1468,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: f0f75ba0e18fa5b469d1fb54ec76a103, type: 2}
   spriteRenderer: {fileID: 266933955}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -2232,7 +2233,7 @@ GameObject:
   - component: {fileID: 394929542}
   - component: {fileID: 394929541}
   m_Layer: 0
-  m_Name: Country 6
+  m_Name: Eldoria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2268,6 +2269,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 36ae151eccde3c1419ef9b5895027bb3, type: 2}
   spriteRenderer: {fileID: 394929543}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -2776,7 +2778,7 @@ GameObject:
   - component: {fileID: 488186907}
   - component: {fileID: 488186906}
   m_Layer: 0
-  m_Name: Country 7
+  m_Name: Lumaria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2812,6 +2814,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 08d913ea8510a904ba4755f8a0faf957, type: 2}
   spriteRenderer: {fileID: 488186908}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -3201,7 +3204,7 @@ GameObject:
   - component: {fileID: 550629497}
   - component: {fileID: 550629496}
   m_Layer: 0
-  m_Name: Country 8
+  m_Name: Ironfall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3237,6 +3240,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 02319decb205b2b408f9de968d90a8e8, type: 2}
   spriteRenderer: {fileID: 550629498}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -3894,6 +3898,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: e5cf615f55c58004d89395b2cf1f6d3c, type: 2}
   spriteRenderer: {fileID: 624393056}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -4118,7 +4123,7 @@ GameObject:
   - component: {fileID: 644178609}
   - component: {fileID: 644178608}
   m_Layer: 0
-  m_Name: Country 1
+  m_Name: Aetherion
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4154,6 +4159,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 8e718f21ffed36445886ae5f37064187, type: 2}
   spriteRenderer: {fileID: 644178610}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -4485,6 +4491,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: fcb072186df6b0a4e9291ff2e653ac43, type: 2}
   spriteRenderer: {fileID: 809709134}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -4648,6 +4655,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 22f4fa8d962675349810edd378a04ab1, type: 2}
   spriteRenderer: {fileID: 830704333}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -5116,6 +5124,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 8e718f21ffed36445886ae5f37064187, type: 2}
   spriteRenderer: {fileID: 901783955}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -5414,7 +5423,7 @@ GameObject:
   - component: {fileID: 923588233}
   - component: {fileID: 923588232}
   m_Layer: 0
-  m_Name: Country 9
+  m_Name: Zephyros
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5451,6 +5460,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: e5cf615f55c58004d89395b2cf1f6d3c, type: 2}
   spriteRenderer: {fileID: 923588234}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -5567,6 +5577,7 @@ RectTransform:
   - {fileID: 1755393118}
   - {fileID: 162859843}
   - {fileID: 881356694}
+  - {fileID: 2113190139}
   m_Father: {fileID: 1506722242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -5628,6 +5639,7 @@ MonoBehaviour:
   ourCountryArmyText: {fileID: 843504098}
   ourCountryFoodText: {fileID: 1662655513}
   ourCountryGoldText: {fileID: 143738504}
+  ourCountryFlagImage: {fileID: 2113190137}
 --- !u!1 &930601061
 GameObject:
   m_ObjectHideFlags: 0
@@ -6397,7 +6409,7 @@ GameObject:
   - component: {fileID: 1030992698}
   - component: {fileID: 1030992697}
   m_Layer: 0
-  m_Name: Country 3
+  m_Name: Drakemont
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6433,6 +6445,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: fcb072186df6b0a4e9291ff2e653ac43, type: 2}
   spriteRenderer: {fileID: 1030992699}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -6634,6 +6647,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: d5bbec48cca6ddf468b80a05a5b76ff6, type: 2}
   spriteRenderer: {fileID: 1038105772}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -6923,6 +6937,81 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1049333698
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049333699}
+  - component: {fileID: 1049333701}
+  - component: {fileID: 1049333700}
+  m_Layer: 5
+  m_Name: CountryFlagImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1049333699
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049333698}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1146562962}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -227, y: 326}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1049333700
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049333698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1049333701
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049333698}
+  m_CullTransparentMesh: 1
 --- !u!1 &1064286396
 GameObject:
   m_ObjectHideFlags: 0
@@ -7358,6 +7447,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 36ae151eccde3c1419ef9b5895027bb3, type: 2}
   spriteRenderer: {fileID: 1137675082}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -7447,7 +7537,7 @@ GameObject:
   - component: {fileID: 1142897988}
   - component: {fileID: 1142897987}
   m_Layer: 0
-  m_Name: Country 10
+  m_Name: Ravenhold
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7484,6 +7574,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: d5bbec48cca6ddf468b80a05a5b76ff6, type: 2}
   spriteRenderer: {fileID: 1142897989}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -7578,7 +7669,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1146562962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7599,6 +7690,7 @@ RectTransform:
   - {fileID: 73520290}
   - {fileID: 762600164}
   - {fileID: 588630590}
+  - {fileID: 1049333699}
   m_Father: {fileID: 1506722242}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -7659,6 +7751,7 @@ MonoBehaviour:
   countryNameText: {fileID: 1799079547}
   countryPopulationText: {fileID: 473207416}
   countryFoodText: {fileID: 1105428209}
+  countryFlagImage: {fileID: 1049333700}
 --- !u!1 &1180924178
 GameObject:
   m_ObjectHideFlags: 0
@@ -7672,7 +7765,7 @@ GameObject:
   - component: {fileID: 1180924181}
   - component: {fileID: 1180924180}
   m_Layer: 0
-  m_Name: Country 5
+  m_Name: Nordhaven
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7708,6 +7801,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 5b477398b7844724ab35585a2c8d81b9, type: 2}
   spriteRenderer: {fileID: 1180924182}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -8505,6 +8599,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 02319decb205b2b408f9de968d90a8e8, type: 2}
   spriteRenderer: {fileID: 1376710714}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -8594,7 +8689,7 @@ GameObject:
   - component: {fileID: 1396523271}
   - component: {fileID: 1396523270}
   m_Layer: 0
-  m_Name: Country 11
+  m_Name: Ashkara
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8630,6 +8725,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 22f4fa8d962675349810edd378a04ab1, type: 2}
   spriteRenderer: {fileID: 1396523272}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -9313,6 +9409,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 5b477398b7844724ab35585a2c8d81b9, type: 2}
   spriteRenderer: {fileID: 1572664828}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -10377,7 +10474,7 @@ GameObject:
   - component: {fileID: 1763599338}
   - component: {fileID: 1763599341}
   m_Layer: 0
-  m_Name: Country 4
+  m_Name: Solaryn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10413,6 +10510,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: bd28ddbc6edd09f40be8491d96014639, type: 2}
   spriteRenderer: {fileID: 1763599340}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -11043,7 +11141,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: -677, y: -31}
+  m_AnchoredPosition: {x: -571, y: -31}
   m_SizeDelta: {x: 365, y: 67.167}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1850722785
@@ -11417,6 +11515,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: bd28ddbc6edd09f40be8491d96014639, type: 2}
   spriteRenderer: {fileID: 2014716221}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -11574,7 +11673,7 @@ GameObject:
   - component: {fileID: 2073243434}
   - component: {fileID: 2073243433}
   m_Layer: 0
-  m_Name: Country 2
+  m_Name: Valoria
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11610,6 +11709,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: f0f75ba0e18fa5b469d1fb54ec76a103, type: 2}
   spriteRenderer: {fileID: 2073243435}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0
@@ -11820,6 +11920,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2084232822}
   m_CullTransparentMesh: 1
+--- !u!1 &2113190136
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2113190139}
+  - component: {fileID: 2113190138}
+  - component: {fileID: 2113190137}
+  m_Layer: 5
+  m_Name: OurCountryFlagImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2113190137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113190136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &2113190138
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113190136}
+  m_CullTransparentMesh: 1
+--- !u!224 &2113190139
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2113190136}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 928176469}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -875, y: 8}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &2131219621
 GameObject:
   m_ObjectHideFlags: 0
@@ -12003,6 +12178,7 @@ MonoBehaviour:
   countryData: {fileID: 11400000, guid: 08d913ea8510a904ba4755f8a0faf957, type: 2}
   spriteRenderer: {fileID: 2138500480}
   countryName: 
+  countryFlag: {fileID: 0}
   countryArmyPopulation: 0
   countryFood: 0
   countryGold: 0

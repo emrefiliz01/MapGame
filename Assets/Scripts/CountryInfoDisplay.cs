@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.UI;
 using TMPro;
 
 public class CountryInfoDisplay : MonoBehaviour
@@ -8,6 +9,7 @@ public class CountryInfoDisplay : MonoBehaviour
     [SerializeField] private TMP_Text countryNameText;
     [SerializeField] private TMP_Text countryPopulationText;
     [SerializeField] private TMP_Text countryFoodText;
+    [SerializeField] private Image countryFlagImage;
 
     private void Awake()
     {
@@ -19,5 +21,10 @@ public class CountryInfoDisplay : MonoBehaviour
         countryNameText.text = country.countryName;
         countryPopulationText.text = country.countryArmyPopulation.ToString();
         countryFoodText.text = country.countryFood.ToString();
+        
+        if (countryFlagImage != null && country.countryFlag != null)
+        {
+            countryFlagImage.sprite = country.countryFlag;
+        }
     }
 }

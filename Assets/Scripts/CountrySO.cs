@@ -4,6 +4,7 @@ using UnityEngine;
 public class CountrySO : ScriptableObject
 {
     public string countryName;
+    public Sprite countryFlag;
     public int countryArmyPopulation;
     public int countryFood;
     public int countryGold;
