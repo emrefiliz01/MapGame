@@ -5,6 +5,7 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
+    [SerializeField] private List<string> inBattleStatus;
     private Country selectedCountry;
     private Country playerCountry;
     private Country defeatedCountry;
