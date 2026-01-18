@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: Drakemont
   countryFlag: {fileID: 21300000, guid: 7987084a15ef03945b8a0a97ecb87b94, type: 3}
-  countryArmyPopulation: 300
-  countryFood: 300
-  countryGold: 300
+  countryArmyPopulation: 448
+  countryFood: 152
+  countryGold: 96

@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: Zephyros
   countryFlag: {fileID: 21300000, guid: 77d53c4806b240f408854f6239c21e21, type: 3}
-  countryArmyPopulation: 900
-  countryFood: 900
-  countryGold: 900
+  countryArmyPopulation: 534
+  countryFood: 105
+  countryGold: 139

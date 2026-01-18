@@ -9,3 +9,4 @@ public class CountrySO : ScriptableObject
     public int countryFood;
     public int countryGold;
 }
+

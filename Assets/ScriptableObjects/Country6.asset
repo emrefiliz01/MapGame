@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: Eldoria
   countryFlag: {fileID: 21300000, guid: d2a807a0eaff24e49871cd09062cdf6e, type: 3}
-  countryArmyPopulation: 600
-  countryFood: 600
-  countryGold: 600
+  countryArmyPopulation: 465
+  countryFood: 150
+  countryGold: 169

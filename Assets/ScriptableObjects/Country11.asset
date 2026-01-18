@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: Ashkara
   countryFlag: {fileID: 21300000, guid: a0e71bc7a1e9f6348a493dc541f864e3, type: 3}
-  countryArmyPopulation: 1100
-  countryFood: 1100
-  countryGold: 1100
+  countryArmyPopulation: 886
+  countryFood: 367
+  countryGold: 215

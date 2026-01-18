@@ -14,6 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   countryName: Nordhaven
   countryFlag: {fileID: 21300000, guid: 8d91e0047774a3a49ab69dedbe01a43a, type: 3}
-  countryArmyPopulation: 500
-  countryFood: 500
-  countryGold: 500
+  countryArmyPopulation: 579
+  countryFood: 237
+  countryGold: 177

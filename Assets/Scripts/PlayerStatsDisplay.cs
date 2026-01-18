@@ -11,10 +11,24 @@ public class PlayerStatsDisplay : MonoBehaviour
     [SerializeField] private TMP_Text ourCountryFoodText;
     [SerializeField] private TMP_Text ourCountryGoldText;
     [SerializeField] private Image ourCountryFlagImage;
+    [SerializeField] private float initDelay = 0.1f;
 
     private void Awake()
     {
         Instance = this;
+    }
+
+    private void Start()
+    {
+        Invoke(nameof(DelayedInit), initDelay);
+    }
+
+    private void DelayedInit()
+    {
+        if (GameManager.Instance != null && GameManager.Instance.PlayerCountry != null)
+        {
+            UpdateDisplay(GameManager.Instance.PlayerCountry);
+        }
     }
 
     public void UpdateDisplay(Country country)
